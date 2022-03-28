@@ -4,10 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Archivo|Archivo+Narrow:400,600"rel="stylesheet"/>
+    <link rel="stylesheet" href="/index.css">
     <title>Marvel Memory Game</title>
     <style></style>
 </head>
 <body>
+    <header>
+        <div class="item movement">
+           <p>Movimientos</p>
+           <div class="info">
+                <span class="mov">00</span>/<span class="movTotal">10</span> 
+           </div>
+        </div>
+
+        <div class="item time">
+            <p>Tiempo</p>
+            <div class="info">
+                <span class="minutes">00</span>:<span class="seconds">10</span>
+            </div>
+        </div>
+
+        <div class="item level">
+            <p>Nivel</p>
+            <div class="info">
+                <span class="levelCurrent">01</span>
+            </div>
+        </div>
+        
+        <div class="item gems">
+            <p>Gemas</p>
+            <div class="info">
+                <span class="gemsTotal">00</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="seleccion">
+        <video onloadedmetadata="this.muted=true" autoplay loop>
+            <source src="/Abstract - 26011.mp4">
+        </video>
+        <div class="gameOver">
+            <div class="startBtn">
+                <button id="nuevaPartida">Nueva Partida</button>
+                <button id="seleccionarNivel">Seleccionar Nivel</button>
+            </div>
+        </div>   
+       
+    </div>
     
+    
+
 </body>
 </html>
